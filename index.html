@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twitter</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default white mb-0">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav fw-b">
+            <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Momentos</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notificaciones</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Mensajes</a></li>
+          </ul>
+          <i id="logo" class="fa fa-twitter fa-2x col-md-offset-2 mt-1" aria-hidden="true"></i>
+          <form class="navbar-form navbar-right">
+            <div class="input-group">
+              <input id="search" type="text" class="form-control" placeholder="Buscar en Twitter">
+            </div>
+            <button type="button" class="btn btn-default twittear fw-b">Twittear</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid gray mh-92">
+      <div class="row mt-1">
+        <div class="col-md-offset-1 col-md-3">
+          <div class="row">
+            <div id="container-user" class="col-md-12">
+              <div class="col-md-5 photo-user">
+                <img src="assets/images/user-logo.jpg" class="img-responsive" alt="">
+              </div>
+              <div class="col-md-5">
+                <p class="mb-0 t-d">CODEHOUND</p>
+                <p class="t-d">@CODEHOUND</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            mensajes
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            A quien seguir
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

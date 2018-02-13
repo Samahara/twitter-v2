@@ -1,0 +1,76 @@
+#bs-example-navbar-collapse-1 > ul > li:hover {
+  border-bottom: 2px solid #D61E80;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+  color: #D61E80;
+}
+
+#container-user {
+  background: linear-gradient(#EEA5CC, #FAE8F2, white);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#logo {
+  color: #1DA1F2;
+}
+
+#search {
+  background-color: #F5F8FA;
+  border-radius: 15px;
+}
+
+#search:focus {
+  background-color: white;
+  border: 2px solid #D61E80;
+  box-shadow: none;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.gray {
+  background-color: #E6ECF0;
+}
+
+.mh-92 {
+  min-height: 92vh;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 1vh;
+}
+
+.photo-user > img {
+  border-radius: 50px;
+}
+
+.twittear {
+  background-color: #D61E80;
+  border-radius: 15px;
+  border: none;
+  color: white;
+}
+
+.twittear:hover {
+  background-color: #C61E80;
+  color: white;
+}
+
+.t-d:hover {
+  text-decoration: underline;
+}
+
+.white {
+  background-color: white;
+}
