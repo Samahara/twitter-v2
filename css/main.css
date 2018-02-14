@@ -6,14 +6,20 @@
   color: #D61E80;
 }
 
-#container-user {
-  background: linear-gradient(#EEA5CC, #FAE8F2, white);
+#container-follow {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
 
+#container-user {
+  background: linear-gradient(#EEA5CC, #FAE8F2, white);
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
 #logo {
   color: #1DA1F2;
+  margin-top: 1.5vh;
 }
 
 #search {
