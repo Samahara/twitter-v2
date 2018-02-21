@@ -33,6 +33,30 @@
   box-shadow: none;
 }
 
+#textArea {
+  border-color: #F4C6DF;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px 15px 10px 8px;
+}
+
+#textArea::placeholder {
+  color: #D91EA1;
+}
+
+#textArea:focus {
+  border: 2px solid #EEA5CC;
+  box-shadow: none;
+}
+
+#textArea:focus::placeholder {
+  color: #B2B8CE;
+}
+
+#twitts-container > div {
+  border-top: 1px solid #E6ECF0;
+}
+
 .fw-b {
   font-weight: bold;
 }
@@ -61,8 +85,25 @@
   border-radius: 50px;
 }
 
+.pink {
+  background-color: #FAE8F2;
+}
+
+.pb-pt {
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
 .twittear {
-  background-color: #D61E80;
+  background-color: #DE4A99;
   border-radius: 15px;
   border: none;
   color: white;
