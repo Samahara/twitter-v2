@@ -12,9 +12,13 @@
 }
 
 #container-user {
-  background: linear-gradient(#EEA5CC, #FAE8F2, white);
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  background: linear-gradient(#EEA5CC, white, white);
+  padding-top: 12vh;
+  padding-bottom: 1.5vh;
+}
+
+#container-user > div > img {
+  border: 3px solid white;
 }
 
 #logo {
@@ -33,28 +37,32 @@
   box-shadow: none;
 }
 
-#textArea {
+#text-area {
   border-color: #F4C6DF;
   border-radius: 10px;
   resize: none;
   padding: 10px 15px 10px 8px;
 }
 
-#textArea::placeholder {
+#text-area::placeholder {
   color: #D91EA1;
 }
 
-#textArea:focus {
+#text-area:focus {
   border: 2px solid #EEA5CC;
   box-shadow: none;
 }
 
-#textArea:focus::placeholder {
+#text-area:focus::placeholder {
   color: #B2B8CE;
 }
 
 #twitts-container > div {
   border-top: 1px solid #E6ECF0;
+}
+
+.fs-13 {
+  font-size: 1.3em;
 }
 
 .fw-b {
@@ -63,6 +71,19 @@
 
 .gray {
   background-color: #E6ECF0;
+}
+
+.light-gray {
+  color: #6E7F8D;
+}
+
+.links {
+  color: gray;
+  font-weight: bold;
+}
+
+.links:hover {
+  color: #D61E80;
 }
 
 .mh-92 {
@@ -81,12 +102,22 @@
   margin-top: 1vh;
 }
 
+.name-user {
+  padding-top: 5vh;
+}
+
 .photo-user > img {
   border-radius: 50px;
 }
 
 .pink {
   background-color: #FAE8F2;
+}
+
+.a-user {
+  color: #D61E80;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .pb-pt {
@@ -102,6 +133,10 @@
   padding-right: 0;
 }
 
+.t-d:hover {
+  text-decoration: underline;
+}
+
 .twittear {
   background-color: #DE4A99;
   border-radius: 15px;
@@ -114,8 +149,11 @@
   color: white;
 }
 
-.t-d:hover {
-  text-decoration: underline;
+.twittear:focus {
+  background-color: #DE4A99;
+  border-radius: 15px;
+  border: none;
+  color: white;
 }
 
 .white {
