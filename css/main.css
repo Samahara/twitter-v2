@@ -65,6 +65,24 @@
   font-size: 1.3em;
 }
 
+.a-user {
+  color: #D61E80;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.ancores {
+  color: #D61E80;
+}
+
+.ancores:hover {
+  text-decoration: underline;
+}
+
+.fs-1 {
+  font-size: .9em;
+}
+
 .fw-b {
   font-weight: bold;
 }
@@ -112,12 +130,6 @@
 
 .pink {
   background-color: #FAE8F2;
-}
-
-.a-user {
-  color: #D61E80;
-  font-size: 1.4em;
-  font-weight: bold;
 }
 
 .pb-pt {
