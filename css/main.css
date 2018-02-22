@@ -21,6 +21,11 @@
   border: 3px solid white;
 }
 
+#counter {
+  background: transparent;
+  border: none;
+}
+
 #logo {
   color: #1DA1F2;
   margin-top: 1.5vh;
@@ -85,6 +90,10 @@
 
 .fw-b {
   font-weight: bold;
+}
+
+.fw-n {
+  font-weight: normal;
 }
 
 .gray {
