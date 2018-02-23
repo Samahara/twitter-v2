@@ -1,3 +1,13 @@
+#buttonTwitt:disabled {
+  background-color: #F2B9D7;
+  color: #FBEFF6;
+}
+
+#buttonTwitt:disabled:hover {
+  background-color: #EEA5CC;
+  color: #FBEFF6;
+}
+
 #bs-example-navbar-collapse-1 > ul > li:hover {
   border-bottom: 2px solid #D61E80;
 }
@@ -7,7 +17,6 @@
 }
 
 #container-follow {
-  padding-top: 10vh;
   padding-bottom: 10vh;
 }
 
@@ -66,10 +75,6 @@
   border-top: 1px solid #E6ECF0;
 }
 
-.fs-13 {
-  font-size: 1.3em;
-}
-
 .a-user {
   color: #D61E80;
   font-size: 1.4em;
@@ -84,8 +89,29 @@
   text-decoration: underline;
 }
 
+.ancoreTweet:hover {
+  color: #D61E80;
+  text-decoration: underline;
+}
+
+.blue-icon:hover {
+  color: #1DA1F2;
+}
+
+.mb-gray {
+  border-bottom: 1px solid #E6ECF0;
+}
+
+.mt-gray {
+  border-top: 1px solid #E6ECF0;
+}
+
 .fs-1 {
   font-size: .9em;
+}
+
+.fs-13 {
+  font-size: 1.3em;
 }
 
 .fw-b {
@@ -98,6 +124,14 @@
 
 .gray {
   background-color: #E6ECF0;
+}
+
+.green-icon:hover {
+  color: #90C071;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .light-gray {
@@ -139,6 +173,14 @@
 
 .pink {
   background-color: #FAE8F2;
+}
+
+.pink-text {
+  color: #D61E80;
+}
+
+.pink-icon:hover {
+  color: #D61E80;
 }
 
 .pb-pt {
