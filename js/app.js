@@ -79,11 +79,11 @@ function tweet() {
 
   // Create elements
   var $mainContainer = $('<div />', {
-    'class': "col-md-12 pb-pt"
+    'class': "col-md-12 col-xs-12 pb-pt"
   });
 
   var $userPhotoTweet = $('<div />', {
-    'class': "col-md-1 photo-user pl-0 pr-0"
+    'class': "col-md-1 col-xs-1 photo-user pl-0 pr-0"
   });
 
   var $imgUser = $('<img />', {
@@ -91,7 +91,7 @@ function tweet() {
   });
 
   var $contentContainer = $('<div />', {
-    'class': "col-md-10 pr-0"
+    'class': "col-md-10 col-xs-11 pr-0"
   });
 
   var $nameUser = $('<p />', {
@@ -112,17 +112,17 @@ function tweet() {
 
   var $textUser = $('<p />');
 
-  var template = '<div class="col-md-12 pl-0 pr-0 light-gray fs-1">' +
-                    '<div class="col-md-2 pl-0">' +
+  var template = '<div class="col-md-12 col-xs-12 pl-0 pr-0 light-gray fs-1">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-comment blue-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-retweet green-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-heart-empty pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-envelope pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
                   '</div>';
@@ -151,6 +151,10 @@ function tweet() {
   $('#text-area').val("");
   $('#buttonTwitt').attr("disabled", true);
   $('#buttonTwittM').attr("disabled", true);
+  var counter = document.getElementById('counter');
+  var counterM = document.getElementById('counterM');
+  counter.value = 140;
+  counterM.value = 140;
 }
 
 function tweetM() {
@@ -177,11 +181,11 @@ function tweetM() {
 
   // Create elements
   var $mainContainer = $('<div />', {
-    'class': "col-md-12 pb-pt"
+    'class': "col-md-12 col-xs-12 pb-pt"
   });
 
   var $userPhotoTweet = $('<div />', {
-    'class': "col-md-1 photo-user pl-0 pr-0"
+    'class': "col-md-1 col-xs-1 photo-user pl-0 pr-0"
   });
 
   var $imgUser = $('<img />', {
@@ -189,7 +193,7 @@ function tweetM() {
   });
 
   var $contentContainer = $('<div />', {
-    'class': "col-md-10 pr-0"
+    'class': "col-md-10 col-xs-11 pr-0"
   });
 
   var $nameUser = $('<p />', {
@@ -210,17 +214,17 @@ function tweetM() {
 
   var $textUser = $('<p />');
 
-  var template = '<div class="col-md-12 pl-0 pr-0 light-gray fs-1">' +
-                    '<div class="col-md-2 pl-0">' +
+  var template = '<div class="col-md-12 col-xs-12 pl-0 pr-0 light-gray fs-1">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-comment blue-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-retweet green-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-heart-empty pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-2 pl-0">' +
                       '<span class="glyphicon glyphicon-envelope pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
                   '</div>';
@@ -249,6 +253,10 @@ function tweetM() {
   $('#text-areaM').val("");
   $('#buttonTwittM').attr("disabled", true);
   $('#buttonTwitt').attr("disabled", true);
+  var counter = document.getElementById('counter');
+  var counterM = document.getElementById('counterM');
+  counter.value = 140;
+  counterM.value = 140;
 }
 
 $(document).ready(loadPage);
