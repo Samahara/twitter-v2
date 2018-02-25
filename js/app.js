@@ -116,7 +116,7 @@ function tweet() {
   $nameUser.text("Sɑмɑнɑяɑ サマアラ ~");
   $linkUser.text(" @SamaharaOficial");
   $top.text(" · ");
-  $timeTweet.text(hour + " : " + minute + " " + ampm);
+  $timeTweet.text(hour + ":" + minute + " " + ampm);
   $textUser.text($('#text-area').val());
 
   // Dom -> HTML
@@ -133,6 +133,7 @@ function tweet() {
   $('#twitts-container').prepend($mainContainer);
 
   $('#text-area').val("");
+  $('#buttonTwitt').attr("disabled", true);
 }
 
 $(document).ready(loadPage);
