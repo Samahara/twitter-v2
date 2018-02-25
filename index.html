@@ -35,13 +35,47 @@
             <div class="input-group">
               <input id="search" type="text" class="form-control" placeholder="Buscar en Twitter">
             </div>
-            <button type="button" class="btn twittear fw-b">Twittear</button>
+            <button type="button" class="btn twittear fw-b" data-toggle="modal" data-target="#myModal">Twittear</button>
           </form>
           <ul class="nav navbar-nav navbar-right">
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title fw-b text-center" id="myModalLabel">Redactar un nuevo tweet</h4>
+          </div>
+          <div class="modal-body pink pb-pt">
+            <div class="row">
+              <!-- Container textarea -->
+              <div class="col-md-12 pink pb-pt">
+                <!-- User twitts container -->
+                <div class="col-md-1 photo-user pl-0 pr-0">
+                  <img src="assets/images/user-logo.png" class="img-responsive" alt="Photo user">
+                </div>
+                <!-- Textarea -->
+                <div class="col-md-11 pr-0">
+                  <textarea id="text-areaM" class="form-control" rows="1" placeholder="¿Qué está pasando?"></textarea>
+                </div>
+                <!-- Counter -->
+                <div class="col-md-2 mt-1">
+                  <input id="counterM" type="button" class="light-gray" value="140"></input>
+                </div>
+                <!-- Button Twittear -->
+                <div class="col-md-offset-6 col-md-3 pr-0 mt-1">
+                  <button id="buttonTwittM" class="btn btn-default col-md-12 fw-b twittear" type="submit" disabled>Twittear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Main container -->
     <div class="container-fluid gray mh-92">
       <div class="row mt-1">
@@ -169,15 +203,33 @@
                       <p class="inline-block">· <span class="ancores fs-1">Actualizar</span> · <span class="ancores fs-1">Ver todos</span></p>
                     </div>
                     <!-- Follow -->
-                    <div class="col-md-12 white">
-                      <div class="mb-gray">
-                        hola
+                    <div class="col-md-12 fs-1 white">
+                      <div class="col-md-12 mb-gray pb-pt pl-0 pr-0">
+                        <div class="col-md-3 photo-user pl-0">
+                          <img src="assets/images/laboratoria.jpg" class="img-responsive" alt="Follow">
+                        </div>
+                        <div class="col-md-9 pl-0 pr-0">
+                          <p class="fw-b ancoreTweet inline-block">Laboratoria</p><span class="fw-n fs-1 light-gray"> @Laboratoriala</span>
+                          <a class="col-md-6 btn btn-default buttonFollow fw-b" target="_blank" href="https://twitter.com/Laboratoriala" role="button">Seguir</a>
+                        </div>
                       </div>
-                      <div class="mb-gray">
-                        hola
+                      <div class="col-md-12 mb-gray pb-pt pl-0 pr-0">
+                        <div class="col-md-3 photo-user pl-0">
+                          <img src="assets/images/Kojima_Hideo.jpg" class="img-responsive" alt="Follow">
+                        </div>
+                        <div class="col-md-9 pl-0 pr-0">
+                          <p class="fw-b ancoreTweet inline-block">小島秀夫</p><span class="fw-n fs-1 light-gray"> @Kojima_Hideo</span>
+                          <a class="col-md-6 btn btn-default buttonFollow fw-b" target="_blank" href="https://twitter.com/Kojima_Hideo" role="button">Seguir</a>
+                        </div>
                       </div>
-                      <div class="">
-                        hola
+                      <div class="col-md-12 pb-pt pl-0 pr-0">
+                        <div class="col-md-3 photo-user pl-0">
+                          <img src="assets/images/Bebe.jpg" class="img-responsive" alt="Follow">
+                        </div>
+                        <div class="col-md-9 pl-0 pr-0">
+                          <p class="fw-b ancoreTweet inline-block">Bebe</p><span class="fw-n fs-1 light-gray"> @LaBebeBellota</span>
+                          <a class="col-md-6 btn btn-default buttonFollow fw-b" target="_blank" href="https://twitter.com/LaBebeBellota" role="button">Seguir</a>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-12 white mt-gray">
@@ -185,7 +237,7 @@
                     </div>
                     <!-- About -->
                     <div class="col-md-12 mt-1 white">
-                      <div class="col-md-11 pl-0">
+                      <div class="col-md-12 pl-0">
                         <h4 class="fs-1 mb-0 light-gray inline-block">© 2018 Twitter</h4>
                         <span class="fs-1 light-gray ancoreTweet">Sobre nosotros</span>
                         <span class="fs-1 light-gray ancoreTweet">Centro de Ayuda</span>

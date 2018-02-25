@@ -1,8 +1,10 @@
+#buttonTwittM:disabled,
 #buttonTwitt:disabled {
   background-color: #F2B9D7;
   color: #FBEFF6;
 }
 
+#buttonTwittM:disabled:hover,
 #buttonTwitt:disabled:hover {
   background-color: #EEA5CC;
   color: #FBEFF6;
@@ -30,6 +32,7 @@
   border: 3px solid white;
 }
 
+#counterM,
 #counter {
   background: transparent;
   border: none;
@@ -51,6 +54,7 @@
   box-shadow: none;
 }
 
+#text-areaM,
 #text-area {
   border-color: #F4C6DF;
   border-radius: 10px;
@@ -58,15 +62,18 @@
   padding: 10px 15px 10px 8px;
 }
 
+#text-areaM::placeholder,
 #text-area::placeholder {
   color: #D91EA1;
 }
 
+#text-areaM:focus,
 #text-area:focus {
   border: 2px solid #EEA5CC;
   box-shadow: none;
 }
 
+#text-areaM:focus::placeholder,
 #text-area:focus::placeholder {
   color: #B2B8CE;
 }
@@ -96,6 +103,25 @@
 
 .blue-icon:hover {
   color: #1DA1F2;
+}
+
+.buttonFollow {
+  border-radius: 15px;
+  border: 1px solid #D61E80;
+  color: #D61E80;
+  padding: .5vh 0;
+}
+
+.buttonFollow:hover {
+  background-color: #FAE8F2;
+  border: 1px solid #D61E80;
+  color: #D61E80;
+}
+
+.buttonFollow:focus {
+  background-color: #D61E80;
+  border: none;
+  color: white;
 }
 
 .mb-gray {
