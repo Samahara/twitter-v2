@@ -150,6 +150,7 @@ function tweet() {
 
   $('#text-area').val("");
   $('#buttonTwitt').attr("disabled", true);
+  $('#buttonTwittM').attr("disabled", true);
 }
 
 function tweetM() {
@@ -247,6 +248,7 @@ function tweetM() {
 
   $('#text-areaM').val("");
   $('#buttonTwittM').attr("disabled", true);
+  $('#buttonTwitt').attr("disabled", true);
 }
 
 $(document).ready(loadPage);
