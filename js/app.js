@@ -113,16 +113,16 @@ function tweet() {
   var $textUser = $('<p />');
 
   var template = '<div class="col-md-12 col-xs-12 pl-0 pr-0 light-gray fs-1">' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-comment blue-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-retweet green-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-heart-empty pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-envelope pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
                   '</div>';
@@ -215,16 +215,16 @@ function tweetM() {
   var $textUser = $('<p />');
 
   var template = '<div class="col-md-12 col-xs-12 pl-0 pr-0 light-gray fs-1">' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-comment blue-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-retweet green-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-heart-empty pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
-                    '<div class="col-md-2 col-xs-2 pl-0">' +
+                    '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-envelope pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
                   '</div>';
