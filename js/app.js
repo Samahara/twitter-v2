@@ -257,6 +257,7 @@ function tweetM() {
   var counterM = document.getElementById('counterM');
   counter.value = 140;
   counterM.value = 140;
+  $('#myModal').modal('toggle');
 }
 
 $(document).ready(loadPage);
