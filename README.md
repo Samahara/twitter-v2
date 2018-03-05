@@ -3,6 +3,7 @@
 1. Maquetado inspirado en el diseño original Twitter [Samahara](https://twitter.com/SamaharaOficial)
 2. Framework: [Bootstrap v3.3.7](https://getbootstrap.com/docs/3.3/)
 3. Funcionalidad: jQuery
+4. Mobile Friendly
 
 #### VERSIÓN 0.0.1
 * Diseñar un formulario que permita ingresar un texto y un botón para "twittear".

@@ -58,6 +58,9 @@
 #text-area {
   border-color: #F4C6DF;
   border-radius: 10px;
+  font-size: 1em;
+  height: 50px;
+  line-height: normal;
   resize: none;
   padding: 10px 15px 10px 8px;
 }

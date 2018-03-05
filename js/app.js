@@ -6,7 +6,8 @@ function loadPage() {
   $('#text-areaM').keyup(counterCharacter);
   $('#buttonTwitt').click(tweet);
   $('#buttonTwittM').click(tweetM);
-  // $('#text-area').keydown(resizeTextArea);
+  $('#text-area').keydown(resizeTextArea);
+  $('#text-areaM').keydown(resizeTextAreaM);
 }
 
 function validateText() {
@@ -50,10 +51,17 @@ function counterCharacter() {
   }
 }
 
-// function resizeTextArea() {
-//   var textArea = document.getElementById('text-area');
-//   textArea.style.height = textArea.scrollHeight + 10 + "px";
-// }
+function resizeTextArea() {
+  var textArea = document.getElementById('text-area');
+  textArea.style.height = "50px";
+  textArea.style.height = textArea.scrollHeight + 20 + "px";
+}
+
+function resizeTextAreaM() {
+  var textAreaM = document.getElementById('text-areaM');
+  textAreaM.style.height = "50px";
+  textAreaM.style.height = textAreaM.scrollHeight + 20 + "px";
+}
 
 function tweet() {
   // Time tweet
@@ -155,6 +163,8 @@ function tweet() {
   var counterM = document.getElementById('counterM');
   counter.value = 140;
   counterM.value = 140;
+  var textArea = document.getElementById('text-area');
+  textArea.style.height = "50px";
 }
 
 function tweetM() {
@@ -258,6 +268,8 @@ function tweetM() {
   counter.value = 140;
   counterM.value = 140;
   $('#myModal').modal('toggle');
+  var textAreaM = document.getElementById('text-areaM');
+  textAreaM.style.height = "50px";
 }
 
 $(document).ready(loadPage);
