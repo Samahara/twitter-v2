@@ -131,7 +131,7 @@ function tweet() {
                       '<span class="glyphicon glyphicon-heart-empty pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
                     '<div class="col-md-2 col-xs-3 pl-0">' +
-                      '<span class="glyphicon glyphicon-envelope pink-icon" aria-hidden="true"></span>' +
+                      '<span class="glyphicon glyphicon-envelope pink-icon1" aria-hidden="true"></span>' +
                     '</div>' +
                   '</div>';
 
@@ -235,7 +235,7 @@ function tweetM() {
                       '<span class="glyphicon glyphicon-heart-empty pink-icon" aria-hidden="true"></span>' +
                     '</div>' +
                     '<div class="col-md-2 col-xs-3 pl-0">' +
-                      '<span class="glyphicon glyphicon-envelope pink-icon" aria-hidden="true"></span>' +
+                      '<span class="glyphicon glyphicon-envelope pink-icon1" aria-hidden="true"></span>' +
                     '</div>' +
                   '</div>';
 
@@ -272,4 +272,18 @@ function tweetM() {
   textAreaM.style.height = "50px";
 }
 
+function myHeart() {
+  $(this).removeClass('glyphicon-heart-empty');
+  $(this).addClass('glyphicon-heart');
+  $(this).css('color', '#D61E80');
+}
+
+function myHater() {
+  $(this).removeClass('glyphicon-heart');
+  $(this).addClass('glyphicon-heart-empty');
+  $(this).css('color', 'gray');
+}
+
+$(document).on('click', '.pink-icon', myHeart);
+$(document).on('dblclick', '.pink-icon', myHater);
 $(document).ready(loadPage);
