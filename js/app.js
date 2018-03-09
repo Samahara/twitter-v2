@@ -128,7 +128,7 @@ function tweet() {
                       '<span class="glyphicon glyphicon-retweet green-icon" aria-hidden="true"></span>' +
                     '</div>' +
                     '<div class="col-md-2 col-xs-3 pl-0">' +
-                      '<span class="glyphicon glyphicon-heart-empty pink-icon" aria-hidden="true"></span>' +
+                      '<span class="glyphicon glyphicon-heart-empty pink-icon" data-like="true" aria-hidden="true"></span>' +
                     '</div>' +
                     '<div class="col-md-2 col-xs-3 pl-0">' +
                       '<span class="glyphicon glyphicon-envelope pink-icon1" aria-hidden="true"></span>' +
@@ -273,17 +273,18 @@ function tweetM() {
 }
 
 function myHeart() {
-  $(this).removeClass('glyphicon-heart-empty');
-  $(this).addClass('glyphicon-heart');
-  $(this).css('color', '#D61E80');
-}
-
-function myHater() {
-  $(this).removeClass('glyphicon-heart');
-  $(this).addClass('glyphicon-heart-empty');
-  $(this).css('color', 'gray');
+  if ($(this).data("like")) {
+    $(this).data('like', false);
+    $(this).removeClass('glyphicon-heart-empty pink-icon');
+    $(this).addClass('glyphicon-heart pink-icon');
+    $(this).css('color', '#D61E80');
+  } else {
+    $(this).removeClass('glyphicon-heart pink-icon');
+    $(this).data('like', true);
+    $(this).addClass('glyphicon-heart-empty pink-icon');
+    $(this).css('color', 'gray');
+  }
 }
 
 $(document).on('click', '.pink-icon', myHeart);
-$(document).on('dblclick', '.pink-icon', myHater);
 $(document).ready(loadPage);
