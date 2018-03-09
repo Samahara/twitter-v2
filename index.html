@@ -16,10 +16,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav fw-b">
-            <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</a></li>
+            <li><a href="https://twitter.com/SamaharaOficial" target="_blank"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Momentos</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notificaciones</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Mensajes</a></li>
+            <li><a href="https://github.com/Samahara/twitter-v2" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Mensajes</a></li>
           </ul>
           <i id="logo" class="fa fa-twitter fa-2x col-md-offset-2" aria-hidden="true"></i>
           <form class="navbar-form navbar-right">
@@ -67,13 +67,43 @@
         </div>
       </div>
     </div>
+    <!-- Modal Answer -->
+    <div class="modal fade modal-answer" id="myModalAnswer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title fw-b text-center" id="myModalLabel1">Respuesta a</h4>
+          </div>
+          <div class="modal-body pink pb-pt">
+            <div class="row">
+              <!-- Container textarea -->
+              <div class="col-md-12 pink pb-pt">
+                <!-- Textarea -->
+                <div class="col-md-12 pr-0">
+                  <textarea id="text-areaAnswer" class="form-control" rows="1" placeholder="¿Qué está pasando?"></textarea>
+                </div>
+                <!-- Counter -->
+                <div class="col-md-2 mt-1">
+                  <input id="counterAnswer" type="button" class="light-gray" value="140"></input>
+                </div>
+                <!-- Button Twittear -->
+                <div class="col-md-offset-7 col-md-3 pr-0 mt-1">
+                  <button id="buttonTwittAnswer" class="btn btn-default col-md-12 fw-b twittear" type="submit" disabled>Responder</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Main container -->
     <div class="container-fluid gray mh-100">
       <div class="row mt-1">
         <!-- Container User -->
         <div class="col-md-offset-1 col-md-3">
           <div class="row">
-            <div id="container-user" class="col-md-11 col-xs-12">
+            <div id="container-user" class="col-md-11 col-xs-12 cursor-p">
               <div class="col-md-3 col-xs-3 photo-user pl-0 pr-0">
                 <img src="assets/images/user-logo.png" class="img-responsive" alt="Photo user">
               </div>
@@ -81,7 +111,7 @@
                 <p class="mb-0 t-d fs-13 fw-b">Sɑмɑнɑяɑ サマアラ ~</p>
                 <p class="t-d light-gray">@SamaharaOficial</p>
               </div>
-              <div class="col-md-12 col-xs-12 pl-0 pr-0">
+              <div class="col-md-12 col-xs-12 pl-0 pr-0 cursor-p">
                 <div class="col-md-4 col-xs-4 pl-0 pr-0">
                   <h6 class="links mb-0">Tweets</h6>
                   <span class="a-user">1.022</span>
@@ -103,7 +133,7 @@
                   <h4 class="fw-b mb-0">Tendencias: Ciudad de México</h4>
                   <p>· <span class="ancores fs-1">Cambiar</span></p>
                 </div>
-                <div class="col-md-12 fs-1">
+                <div class="col-md-12 fs-1 cursor-p">
                   <p class="ancores fw-b mb-0">#Laboratoria2018</p>
                   <p class="light-gray mt-0"></p>
                   <p class="ancores fw-b mb-0">De Gea</p>
@@ -152,7 +182,7 @@
               </div>
             </div>
             <!-- Twitts main container -->
-            <div id="twitts-container" class="col-md-12 col-xs-12 white pl-0 pr-0">
+            <div id="twitts-container" class="col-md-12 col-xs-12 white pl-0 pr-0 cursor-p">
               <!-- Example twitts -->
               <div class="col-md-12 col-xs-12 pb-pt">
                 <!-- User twitt photo -->
@@ -165,7 +195,7 @@
                   <p>¡Ya casi esta lista la v2 de Twitter!</p>
                   <div class="col-md-12 col-xs-12 pl-0 pr-0 light-gray fs-1">
                     <div class="col-md-2 col-xs-3 pl-0">
-                      <span class="glyphicon glyphicon-comment blue-icon" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-comment comment blue-icon" data-toggle="modal" data-target="#myModalAnswer" aria-hidden="true"></span>
                     </div>
                     <div class="col-md-2 col-xs-3 pl-0">
                       <span class="glyphicon glyphicon-retweet green-icon" aria-hidden="true"></span>
@@ -177,6 +207,34 @@
                       <span class="glyphicon glyphicon-envelope pink-icon1" aria-hidden="true"></span>
                     </div>
                   </div>
+                </div>
+                <!-- Answer content -->
+                 <div class="col-md-12 content-answers pb-pt">
+                  <!-- <div class="col-md-12 col-xs-12 pl-0 pr-0"> -->
+                    <!-- User twitt photo -->
+                    <!-- <div class="col-md-1 col-xs-1 photo-user pl-0 pr-0">
+                      <img src="assets/images/user-logo.png" class="img-responsive" alt="Photo user">
+                    </div> -->
+                    <!-- Content -->
+                    <!-- <div class="col-md-10 col-xs-11 pr-0">
+                      <p class="fw-b ancoreTweet inline-block">Sɑмɑнɑяɑ サマアラ ~</p><span class="fw-n fs-1 light-gray"> @SamaharaOficial</span><span class="light-gray fw-n"> · </span><span class="fs-1 light-gray ancoreTweet">2 min</span>
+                      <p>¡Esta es una respuesta!</p>
+                      <div class="col-md-12 col-xs-12 pl-0 pr-0 light-gray fs-1">
+                        <div class="col-md-2 col-xs-3 pl-0">
+                          <span class="glyphicon glyphicon-comment blue-icon" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-md-2 col-xs-3 pl-0">
+                          <span class="glyphicon glyphicon-retweet green-icon" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-md-2 col-xs-3 pl-0">
+                          <span class="glyphicon glyphicon-heart-empty pink-icon" data-like="true" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-md-2 col-xs-3 pl-0">
+                          <span class="glyphicon glyphicon-stats pink-icon1" aria-hidden="true"></span>
+                        </div>
+                      </div>
+                    </div> -->
+                  <!-- </div> -->
                 </div>
               </div>
             </div>
@@ -196,7 +254,7 @@
                     <!-- Follow -->
                     <div class="col-md-12 fs-1 white">
                       <div class="col-md-12 mb-gray pb-pt pl-0 pr-0">
-                        <div class="col-md-3 photo-user pl-0">
+                        <div class="col-md-3 photo-user pl-0 cursor-p">
                           <img src="assets/images/Laboratoria.jpg" class="img-responsive" alt="Follow">
                         </div>
                         <div class="col-md-9 pl-0 pr-0">
@@ -205,7 +263,7 @@
                         </div>
                       </div>
                       <div class="col-md-12 mb-gray pb-pt pl-0 pr-0">
-                        <div class="col-md-3 photo-user pl-0">
+                        <div class="col-md-3 photo-user pl-0 cursor-p">
                           <img src="assets/images/Kojima_Hideo.jpg" class="img-responsive" alt="Follow">
                         </div>
                         <div class="col-md-9 pl-0 pr-0">
@@ -214,7 +272,7 @@
                         </div>
                       </div>
                       <div class="col-md-12 pb-pt pl-0 pr-0">
-                        <div class="col-md-3 photo-user pl-0">
+                        <div class="col-md-3 photo-user pl-0 cursor-p">
                           <img src="assets/images/Bebe.jpg" class="img-responsive" alt="Follow">
                         </div>
                         <div class="col-md-9 pl-0 pr-0">
