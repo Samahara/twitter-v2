@@ -68,18 +68,30 @@ function resizeTextArea() {
   var textArea = document.getElementById('text-area');
   textArea.style.height = "50px";
   textArea.style.height = textArea.scrollHeight + 20 + "px";
+
+  if (textArea.value.length === 0) {
+    textArea.style.height = "50px";
+  }
 }
 
 function resizeTextAreaM() {
   var textAreaM = document.getElementById('text-areaM');
   textAreaM.style.height = "50px";
   textAreaM.style.height = textAreaM.scrollHeight + 20 + "px";
+
+  if (textAreaM.value.length === 0) {
+    textAreaM.style.height = "50px";
+  }
 }
 
 function resizeTextAreaAnswer() {
   var textAreaAnswer = document.getElementById('text-areaAnswer');
   textAreaAnswer.style.height = "50px";
   textAreaAnswer.style.height = textAreaAnswer.scrollHeight + 20 + "px";
+
+  if (textAreaAnswer.value.length === 0) {
+    textAreaAnswer.style.height = "50px";
+  }
 }
 
 function tweet() {
