@@ -65,8 +65,8 @@
   font-size: 1em;
   height: 50px;
   line-height: normal;
-  resize: none;
   padding: 10px 15px 10px 8px;
+  resize: none;
 }
 
 #text-areaAnswer::placeholder,
@@ -154,6 +154,14 @@
 
 .fw-n {
   font-weight: normal;
+}
+
+.github > a {
+  text-decoration: none;
+}
+
+.github > a:hover {
+  color: #D61E80;
 }
 
 .gray {
