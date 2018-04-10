@@ -5,6 +5,8 @@
 3. Funcionalidad: jQuery
 4. Mobile Friendly
 
+![Twitter Samahara](https://user-images.githubusercontent.com/32861693/38538292-b9ce2678-3c58-11e8-94fe-f70a421bba4a.png)
+
 #### VERSIÓN 0.0.1
 * Diseñar un formulario que permita ingresar un texto y un botón para "twittear".
 * Agregar un evento de click al botón o de submit al formulario.
