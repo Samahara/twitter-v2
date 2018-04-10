@@ -1,5 +1,5 @@
 # TWITTER v2
-Réplica del microblogging
++ Réplica del microblogging
 
 1. Maquetado inspirado en el diseño original de Twitter [Samahara](https://twitter.com/SamaharaOficial)
 2. Framework: [Bootstrap v3.3.7](https://getbootstrap.com/docs/3.3/)
