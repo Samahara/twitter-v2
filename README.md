@@ -1,4 +1,5 @@
 # TWITTER v2
+Réplica del microblogging.
 
 1. Maquetado inspirado en el diseño original de Twitter [Samahara](https://twitter.com/SamaharaOficial)
 2. Framework: [Bootstrap v3.3.7](https://getbootstrap.com/docs/3.3/)
@@ -6,6 +7,8 @@
 4. Mobile Friendly
 
 ![Twitter Samahara](https://user-images.githubusercontent.com/32861693/38538292-b9ce2678-3c58-11e8-94fe-f70a421bba4a.png)
+
+## Desarrollado para [Laboratoria](http://www.laboratoria.la/)
 
 #### VERSIÓN 0.0.1
 * Diseñar un formulario que permita ingresar un texto y un botón para "twittear".
@@ -34,5 +37,5 @@ Agregar el texto al HTML.
 #### VERSIÓN 0.0.7
 * Poder darle like al tweet.
 
-### VERSIÓN 0.0.8
+#### VERSIÓN 0.0.8
 * Diseñar un formulario que permita ingresar una respuesta al mensaje y un botón para "responder".
