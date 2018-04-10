@@ -1,4 +1,5 @@
 # TWITTER v2
+
 Réplica del microblogging
 
 1. Maquetado inspirado en el diseño original de Twitter [Samahara](https://twitter.com/SamaharaOficial)
@@ -6,7 +7,7 @@ Réplica del microblogging
 3. Funcionalidad: jQuery
 4. Mobile Friendly
 
-![Twitter Samahara](https://user-images.githubusercontent.com/32861693/38538292-b9ce2678-3c58-11e8-94fe-f70a421bba4a.png)
+![Twitter Samahara](https://user-images.githubusercontent.com/32861693/38539676-bad1ac9c-3c5e-11e8-8fbc-cd68efc18854.png)
 
 VERSIÓN 0.0.1
 * Diseñar un formulario que permita ingresar un texto y un botón para "twittear".
