@@ -2,6 +2,8 @@
 
 Réplica del microblogging
 
+## Desarrollado para [Laboratoria](http://www.laboratoria.la/)
+
 1. Maquetado inspirado en el diseño original de Twitter [Samahara](https://twitter.com/SamaharaOficial)
 2. Framework: [Bootstrap v3.3.7](https://getbootstrap.com/docs/3.3/)
 3. Funcionalidad: jQuery
@@ -38,5 +40,3 @@ VERSIÓN 0.0.7
 
 VERSIÓN 0.0.8
 * Diseñar un formulario que permita ingresar una respuesta al mensaje y un botón para "responder".
-
-## Desarrollado para [Laboratoria](http://www.laboratoria.la/)
